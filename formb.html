@@ -84,7 +84,7 @@
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="./table.html"> <i class="bi bi-credit-card ic-boot"></i>پرداخت ها </a>
+            <a href="#"> <i class="bi bi-credit-card ic-boot"></i>پرداخت ها </a>
           </li>
           <li class="sidebar-list-item">
             <a href="#">
@@ -110,9 +110,22 @@
           <form class="form">
             <div class="form-first  first">
               <div class="details-personal">
-                <span class="form-title">اطلاعات شخصی</span>
+
+                <!-- radio btn -->
+                <div class="radio-btn">
+                  <div style="display: flex; justify-content: center; align-items: center;">
+                    <input type="radio" id="genuine" name="information">
+                    <label for="genuine" style="margin-left: 14px;"> حقیقی </label>  
+                  </div>
+                  <div style="display: flex; justify-content: center; align-items: center; margin-left: 22px;">
+                    <input type="radio" id="lagal" name="information">
+                    <label for="lagal"> حقوقی </label>  
+                  </div>
+                </div>
+
+                <span id="span-genuine" class="form-title">اطلاعات شخصی</span>
   
-                <div class="fields">
+                <div id="div-genuine" class="fields">
                   <div class="input-field">
                     <label for="full-name" class="field-label">نام و نام خانوادگی</label>
                     <input
@@ -183,9 +196,9 @@
   
                 </div>
               <div class="details-personal">
-                <span class="form-title">مشخصات هویتی</span>
+                <span id="span-lagal" class="form-title display-none">مشخصات هویتی</span>
   
-                <div class="fields">
+                <div id="div-lagal" class="fields display-none">
                   <div class="input-field">
                     <label for="id-number" class="field-label">کد ملی </label>
                     <input

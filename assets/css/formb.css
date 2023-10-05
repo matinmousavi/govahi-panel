@@ -89,6 +89,18 @@
   .btn-text {
     font-size: 18px;
   }
+
+  .radio-btn {
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 4rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .display-none {
+    display: none;
+  }
  
   @media only screen and (max-width: 1024px) {
     .container {
