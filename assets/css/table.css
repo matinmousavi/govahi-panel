@@ -1,0 +1,444 @@
+/* table */
+.table {
+  width: 85%;
+  border-radius: 25px;
+  border-collapse: collapse;
+  margin: auto;
+}
+/* thead */
+.table-header {
+  background-color: #c7c7c7;
+}
+/* th */
+.table-title {
+  padding: 20px 10px;
+}
+/* td */
+.table-content {
+  text-align: center;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 2px solid #c7c7c7;
+}
+/* icon */
+.table-icon {
+  width: 20px;
+  height: 20px;
+}
+.table-icon2 {
+  width: 30px;
+  height: 30px;
+  color: #777;
+}
+/* check box */
+.checkbox {
+  width: 17px;
+  height: 17px;
+}
+/* search box */
+.form {
+  /* width: 350px; */
+  margin-bottom: 25px;
+  margin-right: 90px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.search-box {
+  height: 35px;
+  width: 250px;
+  outline: none;
+  background: none;
+  border: 1px solid #777;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 3px 5px;
+  box-shadow: 3px 3px 10px #777;
+}
+.search-box::placeholder {
+  color: #777;
+}
+.search-btn {
+  cursor: pointer;
+  width: 50px;
+  height: 35px;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 215px;
+  background-color: blue;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.search-icon {
+  width: 23px;
+  height: 23px;
+  color: white;
+  /* margin-top: 5px; */
+}
+
+.btn-box {
+  display: flex;
+  justify-content: end;
+  padding: 0 60px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000446;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  color: #fff;
+  width: 100px;
+  font-size: 20px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 1024px) {
+  .form {
+    margin: 0;
+  }
+  .search-btn {
+    position: absolute;
+    right: 220px;
+  }
+  .table {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .form {
+    margin: 0;
+  }
+  .search-btn {
+    position: absolute;
+    right: 220px;
+  }
+
+  .table {
+    width: 100%;
+  }
+  .table-header .table-title {
+    display: none;
+  }
+  .table-content,
+  .table-header,
+  .table-title,
+  .table,
+  .table-body,
+  .table-row {
+    display: block;
+  }
+  .table {
+    width: 100%;
+  }
+  .table-content {
+    position: relative;
+    padding-right: 60%;
+  }
+  .table-content::before {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+  }
+  .table-content:nth-of-type(1):before {
+    content: "";
+  }
+  .table-content:nth-of-type(2):before {
+    content: "نام دوره";
+  }
+  .table-content:nth-of-type(3):before {
+    content: "نام  کاربر";
+  }
+  .table-content:nth-of-type(4):before {
+    content: "شماره موبایل";
+  }
+  .table-content:nth-of-type(5):before {
+    content: "مدت  اعتبار دوره (روز)";
+  }
+  .table-content:nth-of-type(6):before {
+    content: " تاریخ شروع دوره";
+  }
+  .table-content:nth-of-type(7):before {
+    content: "تاریخ پایان دوره";
+  }
+  .table-content:nth-of-type(8):before {
+    content: "عملیات";
+  }
+}
+@media only screen and (max-width: 575px) {
+  .form {
+    justify-self: center;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .search-btn {
+    position: absolute;
+    right: 350px;
+  }
+  .table-header .table-title {
+    display: none;
+  }
+  .table-content,
+  .table-header,
+  .table-title,
+  .table,
+  .table-body,
+  .table-row {
+    display: block;
+  }
+  .table {
+    width: 100%;
+  }
+  .table-content {
+    position: relative;
+    padding-right: 60%;
+  }
+  .table-content::before {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+  }
+  .table-content:nth-of-type(1):before {
+    content: "";
+  }
+  .table-content:nth-of-type(2):before {
+    content: "نام دوره";
+  }
+  .table-content:nth-of-type(3):before {
+    content: "نام   کاربر";
+  }
+  .table-content:nth-of-type(4):before {
+    content: "شماره موبایل";
+  }
+  .table-content:nth-of-type(5):before {
+    content: "مدت  اعتبار دوره (روز)";
+  }
+  .table-content:nth-of-type(6):before {
+    content: " تاریخ شروع دوره";
+  }
+  .table-content:nth-of-type(7):before {
+    content: "تاریخ پایان دوره";
+  }
+  .table-content:nth-of-type(8):before {
+    content: "عملیات";
+  }
+}
+@media only screen and (max-width: 520px) {
+  .form {
+    justify-self: center;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .search-btn {
+    position: absolute;
+    right: 320px;
+  }
+  .table-header .table-title {
+    display: none;
+  }
+  .table-content,
+  .table-header,
+  .table-title,
+  .table,
+  .table-body,
+  .table-row {
+    display: block;
+  }
+  .table {
+    width: 100%;
+  }
+  .table-content {
+    position: relative;
+    padding-right: 60%;
+  }
+  .table-content::before {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+  }
+  .table-content:nth-of-type(1):before {
+    content: "";
+  }
+  .table-content:nth-of-type(2):before {
+    content: "نام دوره";
+  }
+  .table-content:nth-of-type(3):before {
+    content: "نام و تصویر کاربر";
+  }
+  .table-content:nth-of-type(4):before {
+    content: "شماره موبایل";
+  }
+  .table-content:nth-of-type(5):before {
+    content: "مدت  اعتبار دوره (روز)";
+  }
+  .table-content:nth-of-type(6):before {
+    content: " تاریخ شروع دوره";
+  }
+  .table-content:nth-of-type(7):before {
+    content: " تاریخ پایان دوره";
+  }
+  .table-content:nth-of-type(8):before {
+    content: "عملیات";
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .form {
+    justify-self: center;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .search-btn {
+    position: absolute;
+    right: 275px;
+  }
+  .table-header .table-title {
+    display: none;
+  }
+  .table-content,
+  .table-header,
+  .table-title,
+  .table,
+  .table-body,
+  .table-row {
+    display: block;
+  }
+  .table {
+    width: 100%;
+  }
+  .table-content {
+    position: relative;
+    padding-right: 60%;
+  }
+  .table-content::before {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+  }
+  .table-content:nth-of-type(1):before {
+    content: "";
+  }
+  .table-content:nth-of-type(2):before {
+    content: "نام دوره";
+  }
+  .table-content:nth-of-type(3):before {
+    content: "نام  کاربر";
+  }
+  .table-content:nth-of-type(4):before {
+    content: "شماره موبایل";
+  }
+  .table-content:nth-of-type(5):before {
+    content: "مدت اعتبار دوره (روز)";
+  }
+  .table-content:nth-of-type(6):before {
+    content: " تاریخ شروع دوره";
+  }
+  .table-content:nth-of-type(7):before {
+    content: "تاریخ پایان دوره";
+  }
+  .table-content:nth-of-type(8):before {
+    content: "عملیات";
+  }
+}
+@media only screen and (max-width: 408px) {
+  .form {
+    justify-self: center;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .search-btn {
+    position: absolute;
+    right: 255px;
+  }
+  .table-header .table-title {
+    display: none;
+  }
+  .table-content,
+  .table-header,
+  .table-title,
+  .table,
+  .table-body,
+  .table-row {
+    display: block;
+  }
+  .table {
+    width: 100%;
+  }
+  .table-content {
+    position: relative;
+    padding-right: 60%;
+  }
+  .table-content::before {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+  }
+  .table-content:nth-of-type(1):before {
+    content: "";
+  }
+  .table-content:nth-of-type(2):before {
+    content: "نام دوره";
+  }
+  .table-content:nth-of-type(3):before {
+    content: "نام  کاربر";
+  }
+  .table-content:nth-of-type(4):before {
+    content: "شماره موبایل";
+  }
+  .table-content:nth-of-type(5):before {
+    content: "مدت اعتبار دوره (روز)";
+  }
+  .table-content:nth-of-type(6):before {
+    content: " تاریخ شروع دوره";
+  }
+  .table-content:nth-of-type(7):before {
+    content: "تاریخ پایان دوره";
+  }
+  .table-content:nth-of-type(8):before {
+    content: "عملیات";
+  }
+}

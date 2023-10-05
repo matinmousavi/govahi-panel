@@ -1,0 +1,113 @@
+.container {
+    position: relative;
+    max-width: 900px;
+    border-radius: 6px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #000;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-title {
+    font-size: 27px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .form {
+    position: relative;
+    min-height: 550px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+    overflow: hidden;
+  }
+  .form-first {
+    position: absolute;
+    background-color: #fff;
+  }
+
+ 
+  .details-personal {
+    margin-top: 30px;
+  }
+  .form-title {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .input-field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+  }
+  .field-input {
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    margin: 6px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+  }
+  .field-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+  }
+  .field-input:is(:focus:valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+  }
+  .nextBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 45px;
+    max-width: 150px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    margin: 36px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+
+  .nextBtn:hover {
+    background-color: #265df2;
+  }
+  
+  .btn-text {
+    font-size: 18px;
+  }
+ 
+  @media only screen and (max-width: 1024px) {
+    .container {
+      margin: 0px;
+    }
+  
+    .input-field {
+      width: calc(100% / 2 - 15px);
+    }
+    .form{
+        min-height: 700px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .input-field {
+      width: calc(100%);
+    }
+    .form{
+        min-height: 1100px;
+    }
+  }
+  
