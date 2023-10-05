@@ -1,49 +1,26 @@
-// let form1 = document.getElementById("form1");
-// let form2 = document.getElementById("form2");
-// let form3 = document.getElementById("form3");
+// radio btn
 
-// let next1 = document.getElementById("next1");
-// let next2 = document.getElementById("next2");
-// let back1 = document.getElementById("back1");
-// let back2 = document.getElementById("back2");
+let lagal = document.querySelector("#lagal");
+let genuine = document.querySelector("#genuine");
+let spanGenuine = document.querySelector("#span-genuine");
+let divGenuine = document.querySelector("#div-genuine");
+let spanLagal = document.querySelector("#span-lagal");
+let divLagal = document.querySelector("#div-lagal");
 
-// let progress = document.getElementById("progress");
+genuine.checked = true;
 
-// next1.onclick= function () {
-//     form1.style.left= "500px"
-//     form2.style.left=" -22px"
-//     progress.style.width="240px"
-// }
-// back1.onclick= function () {
-//     form1.style.left= "-22px"
-//     form2.style.left="-500px"
-//     progress.style.width="120px"
-// }
-// next2.onclick= function () {
-//     form2.style.left= "500px"
-//     form3.style.left="-22px"
-//     progress.style.width="360px"
-// }
-// back2.onclick= function () {
-//     form2.style.left= "-22px"
-//     form3.style.left="-500px"
-//     progress.style.width="240px"
-// }
-let form=document.querySelector("form")
-let nextBtn=form.querySelector(".nextBtn")
-let backBtn=form.querySelector(".backBtn")
-let allInput=form.querySelectorAll(".form-first input")
+let handelGenuie = () => {
+  divGenuine.classList.remove("display-none");
+  spanGenuine.classList.remove("display-none");
+  divLagal.classList.add("display-none");
+  spanLagal.classList.add("display-none");
+};
+genuine.addEventListener("change", handelGenuie);
 
-nextBtn.addEventListener("click",()=>{
-    allInput.forEach(input =>{
-        if (input.Value !="") {
-        form.classList.add('secActive')
-            
-        }else{
-        form.classList.remove('secActive')
-        }
-    })
-})
-backBtn.addEventListener("click",()=> form.classList.remove('secActive'))
-
-  
+let handelLagal = () => {
+  divGenuine.classList.add("display-none");
+  spanGenuine.classList.add("display-none");
+  divLagal.classList.remove("display-none");
+  spanLagal.classList.remove("display-none");
+};
+lagal.addEventListener("change", handelLagal);

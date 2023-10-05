@@ -47,36 +47,9 @@ let sidebar = document.getElementById("sidebar");
 let searchBtn = document.querySelector(".search-btn");
 let searchInput = document.querySelector("#search");
 let tableBody = document.querySelector(".table-body");
-
-// radio btn
-
-let lagal = document.querySelector("#lagal");
-let genuine = document.querySelector("#genuine");
-let spanGenuine = document.querySelector("#span-genuine");
-let divGenuine = document.querySelector("#div-genuine");
-let spanLagal = document.querySelector("#span-lagal");
-let divLagal = document.querySelector("#div-lagal");
 let sidebarOpen = false;
 
-// radio btn
 
-genuine.checked = true;
-
-let handelGenuie = () => {
-  divGenuine.classList.remove("display-none");
-  spanGenuine.classList.remove("display-none");
-  divLagal.classList.add("display-none");
-  spanLagal.classList.add("display-none");
-};
-genuine.addEventListener("change", handelGenuie);
-
-let handelLagal = () => {
-  divGenuine.classList.add("display-none");
-  spanGenuine.classList.add("display-none");
-  divLagal.classList.remove("display-none");
-  spanLagal.classList.remove("display-none");
-};
-lagal.addEventListener("change", handelLagal);
 
 function openSidebar() {
   if (!sidebarOpen) {

@@ -33,6 +33,43 @@
     <link rel="stylesheet" href="./assets/css/form.css" />
   </head>
   <body>
+    <!-- Start Modal -->
+    <div class="backgaround-black"></div>
+
+    <div class="modal">
+      <p>آیا میخواهید خارج شوید؟</p>
+      <div class="modal-box-svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="check-svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.5 12.75l6 6 9-13.5"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="close-svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- End Modal -->
     <div class="grid-container">
       <!-- Header -->
       <header class="header">
@@ -84,9 +121,9 @@
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="#"> <i class="bi bi-credit-card ic-boot"></i>پرداخت ها </a>
+            <a href="./table.html"> <i class="bi bi-credit-card ic-boot"></i>پرداخت ها </a>
           </li>
-          <li class="sidebar-list-item">
+          <li class="sidebar-list-item" id="sidebar-list-item">
             <a href="#">
               <i class="bi bi-box-arrow-right ic-boot"></i> خروج از حساب
             </a>
@@ -123,7 +160,7 @@
                   </div>
                 </div>
 
-                <span id="span-genuine" class="form-title">اطلاعات شخصی</span>
+                <span id="span-genuine" class="form-title">مشخصات مشتری حقیقی</span>
   
                 <div id="div-genuine" class="fields">
                   <div class="input-field">
@@ -183,11 +220,11 @@
                 
                 
                   <div class="input-field">
-                    <label for="job"  class="field-label">شغل</label>
+                    <label for="address"  class="field-label">نشانی</label>
                     <input
                       type="text"
-                      placeholder="شغل خود را وارد کنید"
-                      id="job"
+                      placeholder="نشانی خود را وارد کنید"
+                      id="address"
                       class="field-input"
                       required
                     />
@@ -196,14 +233,14 @@
   
                 </div>
               <div class="details-personal">
-                <span id="span-lagal" class="form-title display-none">مشخصات هویتی</span>
+                <span id="span-lagal" class="form-title display-none">مشخصات مشتری حقوقی </span>
   
                 <div id="div-lagal" class="fields display-none">
                   <div class="input-field">
-                    <label for="id-number" class="field-label">کد ملی </label>
+                    <label for="id-number" class="field-label">نام شرکت</label>
                     <input
                       type="text"
-                      placeholder="کد ملی خود را وارد کنید"
+                      placeholder=" نام شرکت خود را وارد کنید"
                       id="id-number"
                       class="field-input"
                       required
@@ -211,11 +248,11 @@
                   </div>
                 
                   <div class="input-field">
-                    <label for="Issueld-date"  class="field-label">تاریخ صدور شناسنامه</label>
+                    <label for="registration"  class="field-label"> شماره ثبت </label>
                     <input
                       type="text"
-                      placeholder="تاریخ صدور شناسنامه خود را وارد کنید"
-                      id="Issued-date"
+                      placeholder="   شماره ثبت خود را وارد کنید" 
+                      id="registration"
                       class="field-input"
                       required
                     />
@@ -223,48 +260,49 @@
                 
                 
                   <div class="input-field">
-                    <label for="place-of-birth"  class="field-label">محل تولد</label>
+                    <label for="account-type"  class="field-label">نوع حساب</label>
                     <input
                       type="text"
-                      placeholder="محل تولد خود را وارد کنید"
-                      id="place-of-birth"
+                      placeholder=" نوع حساب خود را وارد کنید"
+                      id="account-type"
                       class="field-input"
                       required
                     />
                   </div>
                   <div class="input-field">
-                    <label for="expiry-date" class="field-label">تاریخ انقضا</label>
+                    <label for="registration-date" class="field-label">تاریخ ثبت</label>
                     <input
                       type="text"
-                      placeholder="جنسیت خود را وارد کنید"
-                      id="expiry-date"
+                      placeholder="تاریخ ثبت خود را وارد کنید" 
+                      id="registration-date<"
                       class="field-input"
                       required
                     />
                   </div>
                   <div class="input-field">
-                    <label for="age" class="field-label">سن</label>
+                    <label for="phone-number" class="field-label">شماره موبایل</label>
                     <input
-                      type="number"
-                      placeholder="سن خود را وارد کنید"
-                      id="age"
+                      type="text"
+                      placeholder="شماره موبایل خود را وارد کنید"
+                      id="phone-number"
                       class="field-input"
                       required
                     />
                   </div>
                 
                 
-                
                   <div class="input-field">
-                    <label for="place"  class="field-label">محل صدور شناسنامه</label>
+                    <label for="address"  class="field-label">نشانی</label>
                     <input
                       type="text"
-                      placeholder="شغل خود را وارد کنید"
-                      id="place"
+                      placeholder="نشانی خود را وارد کنید"
+                      id="address"
                       class="field-input"
                       required
                     />
                   </div>
+                </div>
+
                 </div>
   <button class="nextBtn">
   <span class="btn-text">ثبت نام</span>
@@ -282,6 +320,7 @@
 
     <!-- Scripts -->
     <!-- Custom JS -->
-    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/modal.js"></script>
   </body>
 </html>

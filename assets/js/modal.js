@@ -5,6 +5,7 @@ let modalBox = document.querySelector(".modal");
 let closeSvg = document.querySelector(".close-svg");
 let checkSvg = document.querySelector(".check-svg");
 
+
 sideBarItem.addEventListener("click", () => {
   modalBox.style.display = "block";
   bgBlack.style.backgroundColor = "rgba(" + "0," + "0," + "0," + "0.447";
